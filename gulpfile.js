@@ -15,8 +15,8 @@ function browsersync () {
 
 function styles () {
     return src('src/sass/blocks/style.sass')
-        .pipe(sass({outputStyle: 'compressed'}))
-        .pipe(concat('style.min.css'))
+        .pipe(sass({outputStyle: 'expanded'}))
+        .pipe(concat('style.css'))
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 10 version'],
             grid:true
