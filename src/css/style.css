@@ -216,11 +216,75 @@
     max-width: 650px;
   }
 
-  .promo {
-    min-height: 650px;
-    padding: 21px 0 30px 0;
-  }
-  .promo .button_main {
+  .button_main {
     width: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 500px;
+  }
+
+  .header__logo {
+    width: 170px;
+  }
+  .header__official {
+    font-size: 11px;
+  }
+  .header__official span {
+    font-size: 15px;
+  }
+  .header__phone {
+    font-size: 15px;
+  }
+
+  .button {
+    width: 133px;
+    height: 28px;
+  }
+  .button_main {
+    width: 180px;
+    height: 39px;
+    font-size: 15px;
+    line-height: 17px;
+  }
+
+  .promo {
+    min-height: 550px;
+    padding: 21px 0 40px 0;
+  }
+
+  .promo__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 91px;
+  }
+
+  .promo__header {
+    font-size: 37px;
+  }
+
+  .promo__subheader {
+    font-size: 20px;
+  }
+
+  .advantages {
+    min-height: 447px;
+    padding: 40px 0 40px;
+  }
+  .advantages__item {
+    max-width: 160px;
+  }
+  .advantages__item span {
+    margin: 20px 0 15px;
+    line-height: 16px;
   }
 }
