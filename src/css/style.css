@@ -393,6 +393,7 @@
   }
 
   .consultation {
+    max-height: 535px;
     padding: 40px 0 40px;
   }
   .consultation__title {
