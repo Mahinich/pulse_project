@@ -21,8 +21,8 @@ const slider = tns({
     items: 1,
     slideBy: 'page',
     autoplay: false,
-	controls: false,
-	nav: false
+	  controls: false,
+	  nav: false
   });
   document.querySelector('.prev').addEventListener('click', function () {
 	slider.goTo('prev');

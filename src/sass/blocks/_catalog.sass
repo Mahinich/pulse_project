@@ -1,0 +1,51 @@
+.catalog
+    padding-bottom: 80px 
+    &__title
+        font-style: normal
+        font-weight: normal
+        font-size: 30px
+        color: #0D0D0D
+        text-align: center
+        text-transform: uppercase
+
+    &__tabs
+        list-style-type: none
+        margin-top: 46px
+        display: flex
+        justify-content: center
+        margin-bottom: 0
+        padding-left: 0
+    &__tab 
+        width: 222px
+        height: 52px
+        background: rgba(0, 0, 0, 0.0001)
+        border: 2px solid #D0D0D0
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        text-transform: uppercase
+        color: #6B6B6B
+        text-align: center
+        line-height: 50px
+        transform: skewX(-20deg)
+        margin: 0 5px
+        cursor: pointer
+        transition: 0,5s all
+        &:hover
+            box-shadow: 3px 3px 20px $main-color
+            border: none
+        div
+            transform: skew(20deg)
+    &__tab_active
+        color: #FFF
+        background-color: $main-color
+        border: none
+    
+    &__content
+        margin-top: 60px
+    &-item
+        width: 303px
+        min-height: 442px
+        border: 2px solid #e8e8e8
+
+        
