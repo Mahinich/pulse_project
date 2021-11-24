@@ -61,6 +61,26 @@
 	.consultation    
 		padding: 40px 0 40px
 
+	.carousel
+		&__inner
+			width: 100%
+			img
+				display: block
+				margin: 0 auto
+				width: 400px
+		.slick-dots
+			display: flex
+			margin: 0 auto
+			justify-content: space-between
+			button[role="tab"]
+				display: none
+			li[role="presentation"]	
+				&:hover
+					cursor: pointer
+					
+
+
+
 @media (max-width: 576px)
 	.container
 		max-width: 320px
@@ -110,6 +130,14 @@
 
 	br
 		display: none
+
+	.carousel
+		&__inner
+			width: 100%
+			img
+				display: block
+				margin: 0 auto
+				width: 300px
 	
 			
 

@@ -283,7 +283,7 @@
   width: 750px;
   margin: 0 auto;
 }
-.carousel .prev, .carousel .next {
+.carousel .slick-prev, .carousel .slick-next {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -293,17 +293,13 @@
   border: none;
   background-color: #fff;
 }
-.carousel .prev img, .carousel .next img {
+.carousel .slick-prev img, .carousel .slick-next img {
   width: 31px;
   height: 50px;
 }
-.carousel .next {
+.carousel .slick-next {
   right: -66px;
   left: auto;
-}
-.carousel .tns-item img {
-  display: block;
-  margin: 0 auto;
 }
 
 .catalog {
@@ -621,6 +617,30 @@
   .consultation {
     padding: 40px 0 40px;
   }
+
+  .carousel__inner {
+    width: 100%;
+  }
+  .carousel__inner img {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+  }
+  .carousel .slick-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .carousel .slick-dots button[role=tab] {
+    display: none;
+  }
+  .carousel .slick-dots li[role=presentation]:hover {
+    cursor: pointer;
+  }
 }
 @media (max-width: 576px) {
   .container {
@@ -688,5 +708,14 @@
 
   br {
     display: none;
+  }
+
+  .carousel__inner {
+    width: 100%;
+  }
+  .carousel__inner img {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
   }
 }
