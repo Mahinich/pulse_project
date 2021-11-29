@@ -21,7 +21,7 @@
         background: rgba(0, 0, 0, 0.0001)
         border: 2px solid #D0D0D0
         font-style: normal
-        font-weight: normal
+        font-weight: 400
         font-size: 18px
         text-transform: uppercase
         color: #6B6B6B
@@ -48,6 +48,7 @@
         margin-top: 60px
         &_active
             display: flex
+            flex: flex-wrap
     &-item
         width: 303px
         min-height: 442px
@@ -103,13 +104,13 @@
             font-weight: bold
             font-size: 20px
             color: #050505
+
         &__wrapper
             display: flex
             width: calc(200% + 40px)
-
         &__content
             width: 50%
-            margin-right: 0
+            margin-right: 0px
             transform: translateX(-100%)
             transition: 0.5s all
             &_active
@@ -117,23 +118,19 @@
                 margin-right: 20px
 
         &__list
+            position: relative
             width: 50%
             margin-left: 20px
-            transform: translateX(0%)
             padding-right: 20px
+            transform: translateX(0%)
             transition: 0.5s all
-            font-style: normal
-            font-weight: 300
-            font-size: 14px
-            line-height: 21px
-            color: #555555
-            list-style-type: none
-            padding-left: 17px
+            padding-left: 0
             margin-bottom: 0
-            position: relative
+            list-style-type: none
             &_active
-                transform: translateX(-100%) 
-                margin-left: 0
+                transform: translateX(-100%)
+                margin-left: 0px
+                padding-left: 20px
             li
                 position: relative
                 font-style: normal
@@ -165,14 +162,9 @@
             font-size: 14px  
             margin-top: 55px    
             &:hover
-                color: $main-color    
-                 
-                    
-      
+                color: $main-color  
                 
             
-                
-
 
 
         
