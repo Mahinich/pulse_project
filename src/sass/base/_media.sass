@@ -2,9 +2,17 @@
 	.container
 		max-width: 650px
 	
-	
 	.button_main
 		width: 200px
+
+@media (max-width: 992px)
+	.carousel>.container
+		max-width: 769px
+	.carousel__inner
+		width: 80%
+		img
+			width: 100%
+
 
 @media (max-width: 768px )
 	.container
@@ -77,10 +85,16 @@
 			li[role="presentation"]	
 				&:hover
 					cursor: pointer
+
+	.catalog
+		&__tab
+			font-size: 15px
+		&__content
+			justify-content: center
+		.button_catalog-item
+			height: 40px
+			font-size: 15px
 					
-
-
-
 @media (max-width: 576px)
 	.container
 		max-width: 320px
@@ -138,6 +152,18 @@
 				display: block
 				margin: 0 auto
 				width: 300px
+	.catalog
+		&__title
+			font-size: 24px
+		&__tab>div
+			display: flex
+			align-items: center
+			justify-content: center
+			height: 100%
+			line-height: 20px
+			font-size: 12px
+			
+		
 	
 			
 
