@@ -570,6 +570,10 @@
   color: #646464;
 }
 
+.footer {
+  height: 630px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 650px;
