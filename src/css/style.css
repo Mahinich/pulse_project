@@ -848,6 +848,9 @@
     width: 300px;
   }
 
+  .catalog .container {
+    max-width: 400px;
+  }
   .catalog__title {
     font-size: 24px;
   }
@@ -878,5 +881,14 @@
   }
   .reviews__item-img {
     margin: 0 0 20px;
+  }
+
+  .footer__info {
+    height: 200px;
+    width: 100%;
+    padding: 15px 35px;
+  }
+  .footer__social-item {
+    margin: 0 20px;
   }
 }
