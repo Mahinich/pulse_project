@@ -804,9 +804,8 @@
     display: -ms-flexbox;
     display: flex;
     margin: 0 auto;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .carousel .slick-dots button[role=tab] {
     display: none;

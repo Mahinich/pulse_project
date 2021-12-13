@@ -51,4 +51,8 @@ $(document).ready(function(){
 			$('.overlay, #order').fadeIn('slow');
 		});
 	});
+
+	$('#consultation-form').validate();
+	$('#consultaion form').validate();
+	$('#order form').validate();
 });
