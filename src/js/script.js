@@ -53,6 +53,6 @@ $(document).ready(function(){
 	});
 
 	$('#consultation-form').validate();
-	$('#consultaion form').validate();
+	$('#consultation form').validate();
 	$('#order form').validate();
 });
