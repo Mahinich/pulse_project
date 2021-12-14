@@ -240,6 +240,15 @@
   line-height: 30px;
   color: #FFFFFF;
 }
+.consultation .error {
+  border: 2px solid red;
+}
+.consultation label.error {
+  border: none;
+  text-align: center;
+  color: white;
+  margin-bottom: 15px;
+}
 
 .feed-form {
   width: 303px;
@@ -688,6 +697,14 @@
 }
 .modal_mini {
   min-height: 143px;
+}
+.modal .error {
+  border: 1px solid red;
+}
+.modal label.error {
+  border: none;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 #consultation, #order, #thanks {
