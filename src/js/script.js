@@ -70,7 +70,7 @@ $(document).ready(function(){
 					required: "Пожалуйста введите свое имя",
 					minlength: jQuery.validator.format("Введите {0} символов")
 				  },
-				phone: "Пожалуйста, введите свое номер",
+				phone: "Пожалуйста, введите свой номер",
 				email: {
 				  required: "Пожалуйста, введите свою почту",
 				  email: "Неправильно введен адрес почты"
@@ -84,4 +84,20 @@ $(document).ready(function(){
 	validateForms('#order form');
 
 	$('input[name=phone]').mask("+38(999) 999-9999");
+
+	//Smooth scroll and page up
+
+	$ (window).scroll(function() {
+		if($(this).scrollTop() > 1600) {
+			$('.pageup').fadeIn();
+		} else {
+			$('.pageup').fadeOut();
+		}
+	});
+
+	$("a[href^='#']").click(function() {
+		const _href = $(this).attr("href");
+		$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+		return false;
+	});
 });

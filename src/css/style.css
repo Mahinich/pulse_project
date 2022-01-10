@@ -712,7 +712,7 @@
 }
 
 .pageup {
-  display: block;
+  display: none;
   position: fixed;
   bottom: 35px;
   right: 55px;
