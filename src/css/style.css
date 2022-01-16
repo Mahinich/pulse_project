@@ -763,6 +763,12 @@
   height: 25px;
 }
 
+iframe {
+  width: 100%;
+  height: 630px;
+  border: 0;
+}
+
 .overlay {
   display: none;
   position: fixed;
