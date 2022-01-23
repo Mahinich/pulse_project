@@ -1,0 +1,71 @@
+.advantages {
+	min-height: 473px;
+	background: #F6F6F6;
+	padding: 70px 0 67px;
+
+	&__title {
+		text-align: center;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 30px;
+		line-height: 30px;
+		color: #0D0D0D;
+	}
+
+	&__items-wrapper {
+		margin-top: 60px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 277px;
+		text-align: center;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 18px;
+		color: #0D0D0D;
+		span {
+			display: block;
+			margin: 35px 0 20px;
+			font-style: normal;
+			font-weight: 900;
+			font-size: 18px;
+			line-height: 29px;
+		}
+		a {
+			color: rgba(255, 0, 0, 1);
+			font-weight: 300;
+			font-size: 14px;
+			text-decoration: underline;
+		}
+	}
+	&__icon_heartbeat {
+		animation: heartbeat 2s infinite;
+		&:hover {
+			animation-play-state: paused;
+		}
+	}
+	&__icon_shoe {
+		animation: shoe 2s infinite;
+		&:hover {
+			animation-play-state: paused;
+		}
+	}
+	&__icon_cup {
+		animation: cup 2s infinite;
+		&:hover {
+			animation-play-state: paused;
+		}
+	}
+}
+
+	
+
+
+	
+
+		 

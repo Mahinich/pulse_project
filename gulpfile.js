@@ -14,7 +14,7 @@ function browsersync () {
 }
 
 function styles () {
-    return src('src/sass/blocks/style.sass')
+    return src('src/sass/blocks/style.scss')
         .pipe(sass({outputStyle: 'compressed'}))
         .pipe(concat('style.min.css'))
         .pipe(autoprefixer({
@@ -26,7 +26,7 @@ function styles () {
 }
 
 function watching () {
-    watch(['src/sass/**/*.sass'], styles);
+    watch(['src/sass/**/*.scss'], styles);
     watch('src/*.html').on ('change', browserSync.reload);
 }
 

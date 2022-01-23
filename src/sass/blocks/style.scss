@@ -1,0 +1,32 @@
+@import "../lib/bootstrap-reboot.min";
+@import "../lib/fonts";
+@import "../lib/slick";
+@import "../lib/animate";
+
+@import "../base/animations";
+@import "../base/variables";
+
+* {
+    font-family: 'Museo SansCyrl', sans-serif;
+}
+
+.container {
+    position: relative;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+@import "promo";    
+@import "header";    
+@import "buttons";    
+@import "advantages";    
+@import "consultation";    
+@import "forms";    
+@import "carousel";  
+@import "catalog";  
+@import "reviews";  
+@import "footer";  
+@import "modal"; 
+@import "pageup"; 
+@import "../base/_media";    
+
