@@ -28,7 +28,7 @@ function scripts() {
         .pipe(browserSync.stream())
 }
 
-function styles () {
+function styles() {
     return src('src/sass/blocks/style.sass')
         .pipe(sass({outputStyle: 'compressed'}))
         .pipe(concat('style.min.css'))
@@ -40,7 +40,17 @@ function styles () {
         .pipe(browserSync.stream());
 }
 
-function watching () {
+function build() {
+    return src([
+        'src/css/style.min.css',
+        'src/fonts/**/*',
+        'src/js/script.min.js',
+        'src/*.html'
+    ], {base: 'src'})
+        .pipe(dest('dist')) 
+} 
+
+function watching() {
     watch(['src/sass/**/*.sass'], styles);
     watch(['src/js/**/*.js','!src/js/script.min.js'], scripts);
     watch('src/*.html').on ('change', browserSync.reload);
@@ -50,5 +60,6 @@ exports.styles = styles;
 exports.watching = watching;
 exports.browsersync = browsersync;
 exports.scripts = scripts;
+exports.build = build;
 
 exports.default = parallel(scripts, browsersync, watching);
