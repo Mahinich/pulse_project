@@ -7,6 +7,7 @@ const uglify       = require('gulp-uglify-es').default;
 const autoprefixer = require('gulp-autoprefixer');
 const imagemin     = require('gulp-imagemin');
 const del          = require('del');
+const htmlMin      = require('gulp-htmlmin');
 
 function browsersync () {
     browserSync.init ({
@@ -14,6 +15,12 @@ function browsersync () {
             baseDir:'src/'
         }
     });
+}
+
+function htmlMinify() {
+    return src('src/*.html')
+    .pipe(htmlMin({ collapseWhitespace: true }))
+    .pipe(dest('dist'));
 }
 
 function cleanDist() {
@@ -83,7 +90,8 @@ exports.watching = watching;
 exports.browsersync = browsersync;
 exports.scripts = scripts;
 exports.images = images;
-exports.images = cleanDist;
+exports.cleanDist = cleanDist;
+exports.htmlMinify = htmlMinify;
 
 exports.build = series(cleanDist, images, build);
 exports.default = parallel(styles, scripts, browsersync, watching);
